@@ -1,4 +1,4 @@
-# Inkdrop Release Notes
+# Inkdrop Release Notes (Beta)
 
 ## v3.25.0-beta.0
 2019-01-06
