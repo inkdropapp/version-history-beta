@@ -21,13 +21,13 @@ try {
       win32: {
         archive: `Inkdrop-${version}-Windows.zip`,
         installer: 'Setup.exe',
-        nupkg: `inkdrop-${version}-full.nupkg`,
+        nupkg: `inkdrop-${version.replace('beta.', 'beta')}-full.nupkg`,
         releases: 'RELEASES'
       },
       linux: {
         archive: `Inkdrop-${version}-Linux.zip`,
-        deb: `inkdrop_${version}_amd64.deb`,
-        rpm: `inkdrop-${version}.x86_64.rpm`
+        deb: `inkdrop_${version.replace('-', '~')}_amd64.deb`,
+        rpm: `inkdrop-${version.replace('-', '.')}.x86_64.rpm`
       }
     }
   }
