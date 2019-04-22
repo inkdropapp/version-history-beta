@@ -1,5 +1,18 @@
 # Inkdrop Release Notes (Beta)
 
+## v4.0.0-beta.1
+2019-04-22
+
+* **New feature**: End-to-end encryption
+* **New feature**: New search UI
+* **New feature**: Notebook submenus
+* **New feature**: Count badges
+* **New feature**: Smart scroll sync for side-by-side mode
+* **Improvement**: Better performance for full-text search
+* **Improvement**: Support embedding attachment images with HTML tags (Thanks [Erdem](https://forum.inkdrop.app/t/images-in-html-tag/1096))
+* **Bugfix**: Exported PDF randomly skips inline image (Thanks [Asish](https://forum.inkdrop.app/t/exported-pdf-randomly-skips-inline-images/1070))
+* **Bugfix**: First bullet point has an additional newline (Thanks [derkork](https://forum.inkdrop.app/t/first-bullet-point-has-an-additional-newline/1068) and Kuroyanagi-san)
+
 ## v3.25.0-beta.0
 2019-01-06
 
