@@ -1,6 +1,6 @@
 {
   "name": "inkdrop-version-history-beta",
-  "version": "3.25.0-beta.0",
+  "version": "4.0.0-beta.1",
   "description": "The beta version history of Inkdrop for desktop",
   "main": "index.js",
   "scripts": {
