@@ -1,4 +1,14 @@
 -
+  version: 4.0.0-beta.2
+  pub_date: 2019-04-24T00:00:00.000Z
+  notes: |
+    * **Improvement**: Quicker smart scroll sync
+    * **Bugfix**: Can't toggle task list on preview
+    * **Bugfix**: Smart scroll sync is unstable (Thanks Otawara-san)
+    * **Bugfix**: Previous search text highlighting won't be cleared on the editor (Thanks [Erdem](https://forum.inkdrop.app/t/previous-search-history/1126)
+    * **Bugfix**: Backspace won't work on tags input bar (Thanks [FORTRAN](https://forum.inkdrop.app/t/tag-removal-not-working/1134)
+    * **Bugfix**: Can't remove notebooks and tags from sidebar
+-
   version: 4.0.0-beta.1
   pub_date: 2019-04-22T00:00:00.000Z
   notes: |
