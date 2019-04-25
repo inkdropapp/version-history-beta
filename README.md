@@ -1,5 +1,14 @@
 # Inkdrop Release Notes (Beta)
 
+## v4.0.0-beta.3
+2019-04-25
+
+* **Improvement**: Way smoother smart scroll sync
+* **Bugfix**: `ctrl-y` to redo in the editor not working on Windows and Linux (Thanks Otawara-san)
+* **Bugfix**: Dbl-clicking urls to open on the editor not working (Thanks Otawara-san)
+* **Bugfix**: Props for HTML `img` tag like `width` not working (Thanks [Kazutaka-san](https://forum.inkdrop.app/t/resizing-images-by-using-html-tag/1167/))
+* **Bugfix**: Search keyword not being highlighted until you open a different note (Thanks [Erdem](https://forum.inkdrop.app/t/previous-search-history/1126/3))
+
 ## v4.0.0-beta.2
 2019-04-24
 
