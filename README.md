@@ -1,5 +1,12 @@
 # Inkdrop Release Notes (Beta)
 
+## v4.0.0-beta.5
+2019-05-02
+
+* **Bugfix**: The app crashes when the note list scrolls after resizing the window (Thanks Horii-san)
+* **Bugfix**: Preferences window crashes when opened a plugin detail
+* **Bugfix**: Parse invalid search queries without errors
+
 ## v4.0.0-beta.4
 2019-04-29
 
