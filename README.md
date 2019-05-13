@@ -1,5 +1,14 @@
 # Inkdrop Release Notes (Beta)
 
+## v4.0.0-beta.6
+2019-05-13
+
+* **Improvement**: New logo
+* **Improvement**: Change scrollbar width and color for Windows and Linux (Thanks [leptospira489](https://forum.inkdrop.app/t/thinner-scrollbar-on-windows-and-linux))
+* **Improvement**: Change sidebar indent width slightly (Thanks Enokiya-san)
+* **Improvement**: `ipm` command uses the client API key for the desktop app instead of requiring to generate an API key
+* **Bugfix**: `devMode` won't work (Thanks Otawara-san)
+
 ## v4.0.0-beta.5
 2019-05-02
 
