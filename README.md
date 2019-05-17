@@ -7,7 +7,6 @@
 * **Improvement**: Support filtering by tag (Thanks Horii-san)
 * **Improvement**: Remember sidebar visibility (Thanks Horii-san)
 * **Improvement**: Add left margin to count badge (Thanks [leptospira489](https://forum.inkdrop.app/t/thinner-scrollbar-on-windows-and-linux))
-* **Improvement**: `ipm` command uses the client API key for the desktop app instead of requiring to generate an API key
 * **Bugfix**: JS compile cache not working
 
 ## v4.0.0-beta.6
