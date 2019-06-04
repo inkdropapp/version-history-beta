@@ -1,5 +1,10 @@
 # Inkdrop Release Notes (Beta)
 
+## v4.0.0-beta.9
+2019-06-04
+
+* **Bugfix**: Plugin won't be loaded correctly due to babel error (Thanks [folks involved on this issue](https://github.com/libeanim/inkdrop-admonition/issues/1))
+
 ## v4.0.0-beta.8
 2019-06-03
 
