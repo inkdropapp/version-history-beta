@@ -1,5 +1,12 @@
 # Inkdrop Release Notes (Beta)
 
+## v4.0.1-beta.1
+2019-06-06
+
+* **New feature**: Support `<config_dir>/init.js` for advanced customizations
+* **Bugfix**: `https_proxy` with non-ssl web proxy won't work (Thanks [Christian](https://forum.inkdrop.app/t/login-timeout-error-proxy-settings/1279) and [Rino-san](https://forum.inkdrop.app/t/i-cant-log-in-ssl3-get-record-wrong-version/1020/17))
+* **Bugfix**: Updating FTS index won't be triggered unless you edit a note (Thanks [Sceptic, Hiro and Masatoshi-san](https://forum.inkdrop.app/t/v4-search-not-working-windows-and-android/1280/11))
+
 ## v4.0.0-beta.9
 2019-06-04
 
