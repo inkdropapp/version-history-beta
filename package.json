@@ -11,7 +11,8 @@
     "build:changelog": "node changelog.js",
     "release": "env $(cat .env | xargs) node release.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "docs:deploy": "env $(cat .env | xargs) curl 'https://api.netlify.com/api/v1/sites/b75510a9-302c-4ceb-848c-c9f517ae0152/builds' -H 'Origin: https://app.netlify.com' -H 'Authorization: Bearer $NETLIFY_TOKEN' -H 'Content-Type: application/json' --data-binary '{\"clear_cache\":false}' --compressed | jq ."
   },
   "keywords": [
     "inkdrop"
