@@ -3,6 +3,7 @@
   pub_date: 2019-06-20T00:00:00.000Z
   notes: |
     * **New feature**: Support `<config_dir>/styles.less` for style customizations
+    * **Improvement**: Highlight search text on running `editor:find` or `editor:replace` command (Thanks [Lu](https://forum.inkdrop.app/t/auto-highlight-last-search-query/1342)
     * **Bugfix**: Sync won't work via web proxy (Thanks [Yusuke-san & Christian](https://forum.inkdrop.app/t/proxy-problem-when-synchronizing-notes/1341))
     * **Bugfix**: Show error message when it failed to load local database
     * **Bugfix**: Note tags are sometimes not properly migrated
