@@ -1,5 +1,11 @@
 # Inkdrop Release Notes (Beta)
 
+## v4.1.0-beta.1
+2019-06-20
+
+* **New feature**: Support `<config_dir>/styles.less` for style customizations
+* **Bugfix**: Sync won't work via web proxy (Thanks [Yusuke-san & Christian](https://forum.inkdrop.app/t/proxy-problem-when-synchronizing-notes/1341))
+
 ## v4.0.1-beta.1
 2019-06-06
 
