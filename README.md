@@ -5,6 +5,9 @@
 
 * **New feature**: Support `<config_dir>/styles.less` for style customizations
 * **Bugfix**: Sync won't work via web proxy (Thanks [Yusuke-san & Christian](https://forum.inkdrop.app/t/proxy-problem-when-synchronizing-notes/1341))
+* **Bugfix**: Show error message when it failed to load local database
+* **Bugfix**: Note tags are sometimes not properly migrated
+* **Bugfix**: Broken sync with Android (Thanks [Joshua and Kato-san](https://forum.inkdrop.app/t/android-sync-appears-broken/1324))
 
 ## v4.0.1-beta.1
 2019-06-06
