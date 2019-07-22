@@ -1,4 +1,29 @@
 -
+  version: 4.3.0-beta.1
+  pub_date: 2019-07-22T00:00:00.000Z
+  notes: |
+    * **New feature**: Better table editing support
+      * It automatically creates new row when pressing enter key
+        * Command: `editor:new-line`
+      * It lets you move across table cells with tab key
+        * Command: `editor:move-to-next-table-cell` and `editor:move-to-previous-table-cell`
+      * [See the demo video](https://twitter.com/inkdrop_app/status/1151045914473193473)
+        <div>
+          <video preload="auto" controls src="https://video.twimg.com/ext_tw_video/1151045835594928128/pu/pl/nMjRUVcuFouoq1mr.m3u8?tag=10&amp;descending=true" type="application/x-mpegURL" width="80%"></video>
+        </div>
+    * **New feature**: Support highlighting tables in the editor
+      * Before: ![before](https://github.com/inkdropapp/version-history-beta/blob/master/images/gfm-table-support_before.png?raw=true)
+      * After: ![after](https://github.com/inkdropapp/version-history-beta/blob/master/images/gfm-table-support_after.png?raw=true)
+    * **New feature**: Add [core:search-notes](https://docs.inkdrop.app/manual/list-of-commands#coresearch-notes) and [core:filter-notes](https://docs.inkdrop.app/manual/list-of-commands#corefilter-notes) commands
+    * **New feature**: Support select all items on note list bar with `core:select-all` command
+    * **New feature**: Support `enum` key in config schema for plugins. [See the doc for detail](https://docs.inkdrop.app/reference/config#enum).
+    * **Improvement**: Update syntax themes to support highlighting tables and codeblocks
+    * **Improvement**: Improve indenting ordered list items
+    * **Improvement**: Do not focus to the search bar when selecting search item with keyboard input
+    * **Bugfix**: Close window when it is in fullscreen (Thanks [Sammy](https://forum.inkdrop.app/t/app-crashing-when-quitting-while-fullscreen-on-mac/1329))
+    * **Bugfix**: Add missing commands for changing note status
+      * `editor:change-note-status-(none|active|onhold|completed|dropped)`
+-
   version: 4.2.0-beta.1
   pub_date: 2019-06-30T00:00:00.000Z
   notes: |
