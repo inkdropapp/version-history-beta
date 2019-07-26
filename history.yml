@@ -6,6 +6,8 @@
       ![Screenshot](https://github.com/inkdropapp/version-history-beta/blob/master/images/v4.3.0-changing-datetime.png?raw=true)
     * **New feature**: Add 'Notes' menu item to notebook filter side menu
     * **Improvement**: Support warning about deprecated packages (Thanks Samantha and [Erdem](https://forum.inkdrop.app/t/black-screen-after-4-3-0-beta-version/1405))
+      * You need to update [spell-checker](https://my.inkdrop.app/plugins/spell-checker) plugin for v4.3.0, which now supports multiple languages
+      ![Screenshot](https://github.com/inkdropapp/version-history-beta/blob/master/images/v4.3.0-deprecation-warning.png?raw=true)
     * **Improvement**: Add app events `app:ready` and `app:quit` to [Environment](https://docs.inkdrop.app/reference/environment)
     * **Improvement**: Update some dev stack
 -
