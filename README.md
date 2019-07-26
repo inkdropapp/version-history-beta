@@ -1,5 +1,15 @@
 # Inkdrop Release Notes (Beta)
 
+## v4.3.0-beta.2
+2019-07-26
+
+* **New feature**: Support changing created datetime and updated datetime of notes
+  ![Screenshot](https://github.com/inkdropapp/version-history-beta/blob/master/images/v4.3.0-changing-datetime.png?raw=true)
+* **New feature**: Add 'Notes' menu item to notebook filter side menu
+* **Improvement**: Support warning about deprecated packages (Thanks Samantha and [Erdem](https://forum.inkdrop.app/t/black-screen-after-4-3-0-beta-version/1405))
+* **Improvement**: Add app events `app:ready` and `app:quit` to [Environment](https://docs.inkdrop.app/reference/environment)
+* **Improvement**: Update some dev stack
+
 ## v4.3.0-beta.1
 2019-07-22
 
