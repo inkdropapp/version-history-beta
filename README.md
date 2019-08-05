@@ -1,5 +1,15 @@
 # Inkdrop Release Notes (Beta)
 
+## v4.3.0-beta.3
+2019-08-05
+
+* **Improvement**: Unnecessary spaces inserted when generating table rows (Thanks Otawara-san)
+* **Improvement**: Prevent restoring window size from exceeding the screen bounds (Thanks [chocolat](https://forum.inkdrop.app/t/supported-restore-window-size-and-location/1419))
+* **Improvement**: Re-render when toggled preview (Thanks [James](https://forum.inkdrop.app/t/official-plugin-issue-flowchart-rendering-issue/1412))
+* **Improvement**: Change label for moving note to notebook (Thanks [James](https://forum.inkdrop.app/t/incorrect-label-on-move-to-another-notebook/1411))
+* **Bugfix**: Error notification not showing when failed to load keymap.cson
+* **Bugfix**: Show rendering error when failed to render Markdown and prevent the app crashing (Thanks ofton-san)
+
 ## v4.3.0-beta.2
 2019-07-26
 
