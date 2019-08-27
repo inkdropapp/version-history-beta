@@ -27,7 +27,7 @@ try {
       linux: {
         archive: `Inkdrop-${version}-Linux.zip`,
         deb: `inkdrop_${version.replace('-', '~')}_amd64.deb`,
-        rpm: `inkdrop-${version.replace('-', '.')}.x86_64.rpm`
+        rpm: `inkdrop-${version.replace('-', '.')}-1.x86_64.rpm`
       }
     }
   }
