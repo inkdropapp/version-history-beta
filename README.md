@@ -1,5 +1,15 @@
 # Inkdrop Release Notes (Beta)
 
+## v4.4.0-beta.1
+2019-09-04
+
+* **New feature**: Importing markdown files (Thanks [q1701](https://github.com/q1701/inkdrop-import-markdown))
+* **Improvement**: Bump up Electron from 3.1.4 to 6.0.7
+* **Improvement**: Better UI performance
+* **Bugfix**: Plugin configurations on prefrence window not working
+* **Bugfix**: Pages from the second page are blank when exporting as PDF
+* **Bugfix**: Some memory leaks in sync
+
 ## v4.3.0-beta.3
 2019-08-05
 
