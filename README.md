@@ -1,7 +1,15 @@
 # Inkdrop Release Notes (Beta)
 
+## v4.4.0-beta.2
+2019-10-09
+
+* **Improvement**: Bump up Electron from 6.0.7 to 6.0.11
+* **Bugfix**: Opening next/prev note not working (Thnaks Otawara-san)
+* **Bugfix**: Revert changes regarding checkpointers of data sync which might have been causing that some notes won't be synced in some cases
+* **Bugfix**: The scroll position is lost when toggling distraction free mode (Thanks [Bastian](https://forum.inkdrop.app/t/scroll-position-saved-across-sessions/1303/3))
+
 ## v4.4.0-beta.1
-2019-09-04
+2019-10-07
 
 * **New feature**: Importing markdown files (Thanks [q1701](https://github.com/q1701/inkdrop-import-markdown))
 * **Improvement**: Bump up Electron from 3.1.4 to 6.0.7
