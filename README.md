@@ -4,6 +4,7 @@
 2019-10-09
 
 * **Improvement**: Bump up Electron from 6.0.7 to 6.0.11
+* **Improvement**: Bump up `ipm` from 2.1.6 to 2.4.3
 * **Bugfix**: Opening next/prev note not working (Thnaks Otawara-san)
 * **Bugfix**: Revert changes regarding checkpointers of data sync which might have been causing that some notes won't be synced in some cases
 * **Bugfix**: The scroll position is lost when toggling distraction free mode (Thanks [Bastian](https://forum.inkdrop.app/t/scroll-position-saved-across-sessions/1303/3))
