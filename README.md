@@ -1,5 +1,25 @@
 # Inkdrop Release Notes (Beta)
 
+## v4.7.0-beta.1
+2020-03-25
+
+### New feature
+* Pin notes to top
+  ![Pin notes to top](https://github.com/inkdropapp/version-history-beta/blob/master/images/v4.7.0-beta.1_pin-to-top.png?raw=true)
+  - [ ] Drag & drop to pin notes
+  - [ ] Default keyboard shortcut
+* Show sub-notebooks in [notebook submenu](https://docs.inkdrop.app/manual/navigating-notes#notebook-submenu)
+  ![Show sub-notebooks in workspace](https://github.com/inkdropapp/version-history-beta/blob/master/images/v4.7.0-beta.1_subnotebooks-in-workspace.png?raw=true)
+* Remember sort & order of note list per view (all/notebook/tag/status/pins)
+  ![Remember sort & order](https://github.com/inkdropapp/version-history-beta/blob/master/images/v4.7.0-beta.1_remember-sort-and-order.png?raw=true)
+* Toggling statuses and tags in sidebar
+  ![Toggling statuses and tags](https://github.com/inkdropapp/version-history-beta/blob/master/images/v4.7.0-beta.1_toggle-tags-and-status.png?raw=true)
+
+### Improvement
+* Upgrade Electron from 7.1.3 to 8.2.0
+  * It would be expected some performance improvement by the new IPC serialization with [Structured Clone Algorithm](https://github.com/electron/electron/pull/20214)
+  * Node 12.13.0
+
 ## v4.4.0-beta.2
 2019-10-09
 
