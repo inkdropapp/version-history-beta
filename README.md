@@ -1,5 +1,77 @@
 # Inkdrop Release Notes (Beta)
 
+## v4.7.0-beta.2
+2020-04-15
+
+### New features
+* Support `editor:open-link` command which allows you to open a link on browser from the editor. The default keystroke is <kbd>shift-ctrl-o</kbd>
+* Support Workspace feature  
+  ![workspace](https://github.com/inkdropapp/version-history-beta/blob/master/images/v4.7.0-beta.2_workspace.png?raw=true)
+* Includes sub-notes when notebook item is collapsed  
+  Expanded:  
+  ![Expanded](https://github.com/inkdropapp/version-history-beta/blob/master/images/v4.7.0-beta.2_notebook-expanded.png?raw=true)  
+  Collapsed:  
+  ![Collapsed](https://github.com/inkdropapp/version-history-beta/blob/master/images/v4.7.0-beta.2_notebook-collapsed.png?raw=true)  
+  The collapsing state also refrects listing notes so you can find sub-notes quickly
+* Remember note list state in navigatin history
+* Restore note list and editing state when exiting searching  
+  While searching:  
+  ![Searching](https://github.com/inkdropapp/version-history-beta/blob/master/images/v4.7.0-beta.2_restore-state_searching.png?raw=true)  
+  After exiting from searching by hitting <kbd>Esc</kbd> key or clearing keyword, you get back to the previous state of the note list and the editor:  
+  ![After exiting search](https://github.com/inkdropapp/version-history-beta/blob/master/images/v4.7.0-beta.2_restore-state.png?raw=true)  
+  It is useful to write a note while referring to other notes.
+* Filtering notebooks by keyword  
+  ![Filter](https://github.com/inkdropapp/version-history-beta/blob/master/images/v4.7.0-beta.2_notebook-filter.png?raw=true)
+
+### Improvements
+* Show accelerators in context menu  
+  ![accelerators](https://github.com/inkdropapp/version-history-beta/blob/master/images/v4.7.0-beta.2_accelerators.png?raw=true)
+* Default keyboard shortcut for pinning notes
+  - <kbd>P</kbd> on note list
+* Show pinned notes to top on "**All notes**" and remove "**Pins**" menu
+* Make `strong` & `em` text clearer in syntax themes
+* Improve blockquote styling in syntax and preview themes
+* Change the keystroke for `core:insert-link` to <kbd>cmd-k</kbd> or <kbd>ctrl-k</kbd>
+* Add Emacsy keybindings for Linux and Windows, which was only supported on macOS:
+  ```yaml
+  '.CodeMirror textarea': {
+    'ctrl-f': 'editor:go-char-right',
+    'ctrl-b': 'editor:go-char-left',
+    'ctrl-p': 'editor:go-line-up',
+    'ctrl-n': 'editor:go-line-down',
+    'alt-f': 'editor:go-word-right',
+    'alt-b': 'editor:go-word-left',
+    'ctrl-a': 'editor:go-line-start',
+    'ctrl-e': 'editor:go-line-end',
+    'ctrl-v': 'editor:go-page-down',
+    'shift-ctrl-v': 'editor:go-page-up',
+    'shift-ctrl-f': 'editor:go-char-right',
+    'shift-ctrl-b': 'editor:go-char-left',
+    'shift-ctrl-p': 'editor:go-line-up',
+    'shift-ctrl-n': 'editor:go-line-down',
+    'shift-alt-f': 'editor:go-word-right',
+    'shift-alt-b': 'editor:go-word-left',
+    'shift-ctrl-a': 'editor:go-line-start',
+    'shift-ctrl-e': 'editor:go-line-end',
+    'ctrl-d': 'editor:delete-char-after',
+    'ctrl-h': 'editor:delete-char-before',
+    'alt-d': 'editor:delete-word-after',
+    'ctrl-k': 'editor:kill-line',
+    'ctrl-t': 'editor:transpose-chars',
+    'ctrl-o': 'editor:open-line'
+  }
+  ```
+* Select next note when deleting notes (Thanks [Mike](https://forum.inkdrop.app/t/focus-after-deleting/1842))
+* Restore focus when closing a dialog
+* Smaler font size for note title
+* Better performance in rendering note list items
+
+### Bugfixes
+* Plugin readme is not showing as expected
+* Incorrect parent book Id is used when creating new notebook (Thanks [Gustavo](https://forum.inkdrop.app/t/v4-7-0-beta-1-beta-testing/1834/12?u=craftzdog))
+* Prevent closing window on pressing <kbd>ctrl-w</kbd> on note title input bar on Windows and Linux
+* Do not blur on pressing backspace with all text selected in tag input
+
 ## v4.7.0-beta.1
 2020-03-25
 
