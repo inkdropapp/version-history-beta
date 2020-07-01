@@ -1,4 +1,25 @@
 -
+  version: 4.7.0-beta.3
+  pub_date: 2020-07-02T00:00:00.000Z
+  notes: |
+    ### New features
+    * add MIME type `x-scheme-handler/inkdrop` for Linux so that you can open it with `inkdrop://` URI scheme (Thanks [Andi](https://forum.inkdrop.app/t/allow-inkdrop-scheme-handler-on-linux-ubuntu/1935))
+    ### Improvements
+    * The app launch speed significantly improved
+    * Refurbish the editor toolbar
+      ![Editor toolbar](https://github.com/inkdropapp/version-history-beta/blob/master/images/v4.7.0-beta.3_refurbishing-editor-toolbar.png?raw=true)  
+    * Refurbish icons
+      ![Editor toolbar](https://github.com/inkdropapp/version-history-beta/blob/master/images/v4.7.0-beta.3_refurbishing-icons.png?raw=true)  
+    * Add a separator for grouping pinned notes (Thanks [tdudz](https://forum.inkdrop.app/t/v4-7-0-beta-testing/1834/23?u=craftzdog))
+    * Improve search result by having bigger weight for title field (Thanks [Zhuolun and James](https://forum.inkdrop.app/t/how-to-search-notes-by-the-title/1849))
+    * Set max-width for editor
+    * Bump up Electron to v8.3.4
+    * Show progress of updating local indices
+    * Show error dialog when failed to load the config files (Thanks [can_Y](https://forum.inkdrop.app/t/inkdrop-client-displays-blank-when-opened-on-macos/1954))
+    ### Bugfixes
+    * add `https://` if the URL is invalid format (Thanks [Rael](https://forum.inkdrop.app/t/app-hangs-when-click-partial-link/1955))
+    * fix incorrect English (Thanks Rael)
+-
   version: 4.7.0-beta.2
   pub_date: 2020-04-15T00:00:00.000Z
   notes: |
