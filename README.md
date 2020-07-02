@@ -1,5 +1,11 @@
 # Inkdrop Release Notes (Beta)
 
+## v4.7.0-beta.4
+2020-07-02
+
+### Bugfixes
+* Selecting text is not working
+
 ## v4.7.0-beta.3
 2020-07-02
 
