@@ -4,7 +4,8 @@
 2020-07-02
 
 ### New features
-* add MIME type `x-scheme-handler/inkdrop` for Linux so that you can open it with `inkdrop://` URI scheme (Thanks [Andi](https://forum.inkdrop.app/t/allow-inkdrop-scheme-handler-on-linux-ubuntu/1935))
+* Add MIME type `x-scheme-handler/inkdrop` for Linux so that you can open it with `inkdrop://` URI scheme (Thanks [Andi](https://forum.inkdrop.app/t/allow-inkdrop-scheme-handler-on-linux-ubuntu/1935))
+* Toggle task list (`[ ]` or `[x]`) by mouse click in editor
 ### Improvements
 * The app launch speed significantly improved
 * Refurbish the editor toolbar
