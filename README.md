@@ -1,5 +1,23 @@
 # Inkdrop Release Notes (Beta)
 
+## v5.0.0-beta.1
+2020-07-02
+
+### New features
+* GUI for installing plugins
+  ![Plugin GUI](https://github.com/inkdropapp/version-history-beta/blob/master/images/v5.0.0-plugin-gui.png?raw=true)
+
+### Improvements
+* Show more human-friendly error messages
+* Include 'Completed' & 'Dropped' statuses when filtering with keywords
+* Remove 'Search' sidebar menu
+* Better conversion from HTML to Markdown
+
+### Bugfixes
+* (Revert) Remove max-width of editor
+* Fallback to the default theme if not installed
+* Exporting all notes as Markdown not working when exporting sub-notebooks
+
 ## v4.7.0-beta.4
 2020-07-02
 
