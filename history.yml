@@ -13,9 +13,10 @@
     * Better conversion from HTML to Markdown
 
     ### Bugfixes
-    * (Revert) Remove max-width of editor
-    * Fallback to the default theme if not installed
-    * Exporting all notes as Markdown not working when exporting sub-notebooks
+    * (Revert) The editor not utilizing the full width of the text window (Thanks [Vikas, Jasper, Gustavo, and Samantha](https://forum.inkdrop.app/t/inkdrop-not-utilizing-the-full-width-of-the-text-window/1972))
+    * Fallback to the default theme if not installed (Thanks [Mark](https://forum.inkdrop.app/t/crash-switching-from-custom-theme-development-to-installed-theme/1858))
+    * Exporting all notes as Markdown not working when exporting sub-notebooks (Thanks [Tiemen](https://forum.inkdrop.app/t/export-all-notes-functionality-errors-on-file-already-exist/1997))
+    * Create new notebook modal already has value from previously create notebook (Thanks [Martynas](https://forum.inkdrop.app/t/create-new-notebook-modal-already-has-value-from-previously-create-notebook/1984))
 -
   version: 4.7.0-beta.4
   pub_date: 2020-07-02T00:00:00.000Z
