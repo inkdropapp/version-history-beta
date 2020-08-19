@@ -1,5 +1,16 @@
 # Inkdrop Release Notes (Beta)
 
+## v5.0.0-beta.2
+2020-08-19
+
+### Improvements
+* Restart sync when system unlocked
+* Restart sync when system resumed
+
+### Bugfixes
+* Avoid loading 'null' mode in the editor
+* Fix the issue where "Cannot read property 'toString' of undefined" occasionally happens on the note list (Thanks Gustavo and Rael)
+
 ## v5.0.0-beta.1
 2020-07-02
 

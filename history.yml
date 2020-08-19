@@ -1,4 +1,15 @@
 -
+  version: 5.0.0-beta.2
+  pub_date: 2020-08-19T00:00:00.000Z
+  notes: |
+    ### Improvements
+    * Restart sync when system unlocked
+    * Restart sync when system resumed
+
+    ### Bugfixes
+    * Avoid loading 'null' mode in the editor
+    * Fix the issue where "Cannot read property 'toString' of undefined" occasionally happens on the note list (Thanks Gustavo and Rael)
+-
   version: 5.0.0-beta.1
   pub_date: 2020-07-02T00:00:00.000Z
   notes: |
