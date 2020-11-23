@@ -12,6 +12,9 @@ A vlog for this update :)
 * Support changing order of search results (Thanks [Micah_Ledbetter](https://forum.inkdrop.app/t/search-results-are-not-sortable/2181))
   ![Search result order](https://github.com/inkdropapp/version-history-beta/blob/master/images/v5.2.0-search-result-order.png?raw=true)
 
+### Importing feature improvement
+* Support importing images when importing from Markdown or HTML files
+
 ### Bugfixes
 * Some Pug codeblocks cause the app to be crashed (Thanks [Kato-san](https://forum.inkdrop.app/t/pug/2210))
 
