@@ -1,5 +1,20 @@
 # Inkdrop Release Notes (Beta)
 
+## v5.2.0-beta.1
+2020-11-23
+
+vlog for this update :)  
+[![vlog](https://github.com/inkdropapp/version-history-beta/blob/master/images/v5.2.0-vlog.jpg?raw=true)](https://www.youtube.com/watch?v=zlrQScqhM90)
+
+### Search feature improvements
+* `title:` and `body:` search qualifier to filter notes by title or body
+  ![title qualifier](https://github.com/inkdropapp/version-history-beta/blob/master/images/v5.2.0-title-qualifier.png?raw=true)
+* Support changing order of search results
+  ![Search result order](https://github.com/inkdropapp/version-history-beta/blob/master/images/v5.2.0-search-result-order.png?raw=true)
+
+### Bugfixes
+* Some Pug codeblocks cause the app to be crashed (Thanks [Kato-san](https://forum.inkdrop.app/t/pug/2210))
+
 ## v5.0.0-beta.2
 2020-08-19
 
