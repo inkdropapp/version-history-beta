@@ -3,13 +3,13 @@
 ## v5.2.0-beta.1
 2020-11-23
 
-vlog for this update :)  
+A vlog for this update :)  
 [![vlog](https://github.com/inkdropapp/version-history-beta/blob/master/images/v5.2.0-vlog.jpg?raw=true)](https://www.youtube.com/watch?v=zlrQScqhM90)
 
 ### Search feature improvements
-* `title:` and `body:` search qualifier to filter notes by title or body
+* `title:` and `body:` search qualifier to filter notes by title or body (Thanks [Zhuolun](https://forum.inkdrop.app/t/how-to-search-notes-by-the-title/1849))
   ![title qualifier](https://github.com/inkdropapp/version-history-beta/blob/master/images/v5.2.0-title-qualifier.png?raw=true)
-* Support changing order of search results
+* Support changing order of search results (Thanks [Micah_Ledbetter](https://forum.inkdrop.app/t/search-results-are-not-sortable/2181))
   ![Search result order](https://github.com/inkdropapp/version-history-beta/blob/master/images/v5.2.0-search-result-order.png?raw=true)
 
 ### Bugfixes
