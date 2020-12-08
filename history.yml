@@ -1,4 +1,27 @@
 -
+  version: 5.2.0-beta.2
+  pub_date: 2020-12-08T00:00:00.000Z
+  notes: |
+    ### New features
+    * Support adding tags and status by drag-and-drop notes (Thanks [Jan](https://forum.inkdrop.app/t/feedback-working-with-tags/2225))  
+      ![DnD support](https://github.com/inkdropapp/version-history-beta/blob/master/images/v5.2.0-dnd-support.gif?raw=true)
+    * Add "Remove Tag" context menu on note tag bar (Thanks [Jan](https://forum.inkdrop.app/t/feedback-working-with-tags/2225))
+    * Support `inkdrop://` URL scheme on Windows (Thanks [Otawara-san](https://forum.inkdrop.app/t/windows-url/2232))
+      * Now the URL scheme works across macOS, Linux and Windows 🎉
+
+    ### Improvements
+    * Support YAML frontmatter for Markdown export (Thanks [Robert](https://github.com/inkdropapp/inkdrop-export-utils/pull/3))
+    * Add some animations 🏃  
+      ![DnD support](https://github.com/inkdropapp/version-history-beta/blob/master/images/v5.2.0-animations.gif?raw=true)
+
+    ### Bugfixes
+    * Allow smaller window size when distraction free mode (Thanks [Shota-san](https://forum.inkdrop.app/t/topic/2215))
+    * Move a window into the primary screen if it was outside of screens (Thanks [Alexander](https://forum.inkdrop.app/t/windows-10-app-window-opens-outside-of-screen/869))
+    * Fix word-break of shared page url on note sharing dialog
+    * Hide workspace if notebook does not exist when restoring navigation state (Thanks [T_Crain](https://forum.inkdrop.app/t/notes-and-notebooks-not-syncing-on-mac/2214))
+    * Fix placeholder bug in codemirror (Thanks [Akira-san](https://forum.inkdrop.app/t/just-start-typing-is-shown-when-deleting-unfixed-text-by-back-space-key/2221/6))
+
+-
   version: 5.2.0-beta.1
   pub_date: 2020-11-23T00:00:00.000Z
   notes: |
