@@ -1,4 +1,24 @@
 -
+  version: 5.3.0-beta.1
+  pub_date: 2021-03-12T00:00:00.000Z
+  notes: |
+    ### New features
+    * Support adding tags and status by drag-and-drop notes (Thanks [Jan](https://forum.inkdrop.app/t/feedback-working-with-tags/2225))
+    * Show editing note title in title bar
+    * Dock menu for opening new window (Thanks [Yusuke](https://forum.inkdrop.app/t/macos-dock-inkdrop/2328))
+    * Local REST API endpoint ([See 'Accessing via HTTP (Advanced)' section in the doc](https://beta.docs.inkdrop.app/manual/accessing-the-local-database/#accessing-via-http-advanced))
+
+    ### Improvements
+    * Upgrade Electron from 7 to 12
+    * API: add `editor-floating-actions` layout that allows you to add custom floating action buttons on the editor ([See the doc](https://beta.docs.inkdrop.app/reference/state-layouts#editor-floating-actions)) (Thanks Ron)
+    * Scroll sidebar to the selection automatically when opened a notebook (Thanks [Shogo](https://forum.inkdrop.app/t/open-notebook/2365))
+    * Network diagnosis to help configure Inkdrop for running it behind corporate proxy from menu *Help -> Run Network Diagnosis*.
+    * Set window background to dark on dark mode to avoid flashy white backgrounds (Thanks [Hugh](https://forum.inkdrop.app/t/incomplete-darkmode-white-background-when-opening-new-windows/2371))
+
+    ### Bugfixes
+    * Prevent adding more than one tags with the same name (Thanks [Avis](https://forum.inkdrop.app/t/multiple-identical-tags/2314/2))
+    * change folder structure and file name of backup files that avoid using `:` character, which is prohibited in some cloud storage services (Thanks [Ryan, Nicole, and Evan](https://forum.inkdrop.app/t/is-not-supported-in-onedrive-amazon-drive-or-sync-com/2265))
+-
   version: 5.2.0-beta.2
   pub_date: 2020-12-08T00:00:00.000Z
   notes: |
