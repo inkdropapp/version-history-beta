@@ -4,9 +4,10 @@
 2021-03-12
 
 ### New features
-* Support adding tags and status by drag-and-drop notes (Thanks [Jan](https://forum.inkdrop.app/t/feedback-working-with-tags/2225))
 * Show editing note title in title bar
-* Dock menu for opening new window (Thanks [Yusuke](https://forum.inkdrop.app/t/macos-dock-inkdrop/2328))
+  ![Title bar](https://github.com/inkdropapp/version-history-beta/blob/master/images/v5.3.0_title.png?raw=true)
+* Dock menu for opening new window (Thanks [Yusuke](https://forum.inkdrop.app/t/macos-dock-inkdrop/2328))  
+  ![Dock menu](https://github.com/inkdropapp/version-history-beta/blob/master/images/v5.3.0_dock-menu.png?raw=true)
 * Local REST API endpoint ([See 'Accessing via HTTP (Advanced)' section in the doc](https://beta.docs.inkdrop.app/manual/accessing-the-local-database/#accessing-via-http-advanced))
 
 ### Improvements
@@ -18,7 +19,7 @@
 
 ### Bugfixes
 * Prevent adding more than one tags with the same name (Thanks [Avis](https://forum.inkdrop.app/t/multiple-identical-tags/2314/2))
-* change folder structure and file name of backup files that avoid using `:` character, which is prohibited in some cloud storage services (Thanks [Ryan, Nicole, and Evan](https://forum.inkdrop.app/t/is-not-supported-in-onedrive-amazon-drive-or-sync-com/2265))
+* Change folder structure and file name of backup files that avoid using `:` character, which is prohibited in some cloud storage services (Thanks [Ryan, Nicole, and Evan](https://forum.inkdrop.app/t/is-not-supported-in-onedrive-amazon-drive-or-sync-com/2265))
 
 ## v5.2.0-beta.2
 2020-12-08
