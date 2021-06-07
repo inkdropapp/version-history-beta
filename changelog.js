@@ -8,11 +8,11 @@ try {
   var md = ''
   md += versions
     .splice(0, 10)
-    .map(function(hist) {
+    .map(function (hist) {
       var lines = 'inkdrop (' + hist.version + ') trusty; urgency=medium\n\n'
       lines += hist.notes
         .split('\n')
-        .map(function(line) {
+        .map(function (line) {
           return '  ' + line
         })
         .join('\n')

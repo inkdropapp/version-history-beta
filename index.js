@@ -7,7 +7,7 @@ try {
   var md = '# Inkdrop Release Notes (Beta)\n'
   md += '\n'
   md += versions
-    .map(function(hist) {
+    .map(function (hist) {
       var lines = '## v' + hist.version + '\n'
       if (hist.pub_date) {
         var pubDate = new Date(hist.pub_date)
