@@ -1,5 +1,18 @@
 # Inkdrop Release Notes (Beta)
 
+## v5.5.0-beta.1
+2021-12-20
+
+### Improvements
+* Upgrade Electron from 12 to 16.0.4
+  * Expected to resolve [the GPU process error on Fefora 35 (Thanks Luis)](https://forum.inkdrop.app/t/bug-on-fedora-35-beta/2617)
+* Set focus to the editor title input when a sub window shows up (Thanks [Otawara](https://forum.inkdrop.app/t/topic/2634))
+
+### Bugfixes
+* Can't change sort order by commands (Thanks [Ryuki](https://forum.inkdrop.app/t/topic/2645))
+* Window gets unintentionally resized when dragging if acrylic background enabled (Thanks [elpnt](https://forum.inkdrop.app/t/window-gets-unintentionally-resized-by-dragging-on-windows-11/2717))
+* Move the 'full sync' menu to under the Help menu
+
 ## v5.3.0-beta.1
 2021-03-12
 
