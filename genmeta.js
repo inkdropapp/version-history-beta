@@ -39,7 +39,7 @@ try {
         filename: `Setup.exe`,
         arch: 'x64',
         additionalFiles: {
-          nupkg: `inkdrop-${version}-full.nupkg`,
+          nupkg: `inkdrop-${version.replace('beta.', 'beta')}-full.nupkg`,
           releases: 'RELEASES'
         }
       },
@@ -52,13 +52,13 @@ try {
       {
         platform: 'linux',
         filetype: 'deb',
-        filename: `inkdrop_${version}_amd64.deb`,
+        filename: `inkdrop_${version.replace('-', '~')}_amd64.deb`,
         arch: 'x64'
       },
       {
         platform: 'linux',
         filetype: 'rpm',
-        filename: `inkdrop-${version}-1.x86_64.rpm`,
+        filename: `inkdrop-${version.replace('-', '.')}-1.x86_64.rpm`,
         arch: 'x64'
       }
     ]
