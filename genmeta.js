@@ -3,7 +3,7 @@ var yaml = require('js-yaml')
 var version = require('./package.json').version
 
 try {
-  const versions = yaml.safeLoad(fs.readFileSync('./history.yml', 'utf8'))
+  const versions = yaml.load(fs.readFileSync('./history.yml', 'utf8'))
   const meta = {
     version: version,
     name: 'Inkdrop',
@@ -18,22 +18,28 @@ try {
       {
         platform: 'darwin',
         filetype: 'zip',
-        filename: `Inkdrop-${version}-x86_64-Mac.zip`,
-        arch: 'x86_64'
+        filename: `Inkdrop-${version}-arm64-Mac.zip`,
+        arch: 'arm64'
+      },
+      {
+        platform: 'darwin',
+        filetype: 'zip',
+        filename: `Inkdrop-${version}-x64-Mac.zip`,
+        arch: 'x64'
       },
       {
         platform: 'win32',
         filetype: 'zip',
         filename: `Inkdrop-${version}-Windows.zip`,
-        arch: 'x86_64'
+        arch: 'x64'
       },
       {
         platform: 'win32',
         filetype: 'installer',
         filename: `Setup.exe`,
-        arch: 'x86_64',
+        arch: 'x64',
         additionalFiles: {
-          nupkg: `inkdrop-${version.replace('beta.', 'beta')}-full.nupkg`,
+          nupkg: `inkdrop-${version}-full.nupkg`,
           releases: 'RELEASES'
         }
       },
@@ -41,19 +47,19 @@ try {
         platform: 'linux',
         filetype: 'zip',
         filename: `Inkdrop-${version}-Linux.zip`,
-        arch: 'x86_64'
+        arch: 'x64'
       },
       {
         platform: 'linux',
         filetype: 'deb',
-        filename: `inkdrop_${version.replace('-', '~')}_amd64.deb`,
-        arch: 'x86_64'
+        filename: `inkdrop_${version}_amd64.deb`,
+        arch: 'x64'
       },
       {
         platform: 'linux',
         filetype: 'rpm',
-        filename: `inkdrop-${version.replace('-', '.')}-1.x86_64.rpm`,
-        arch: 'x86_64'
+        filename: `inkdrop-${version}-1.x86_64.rpm`,
+        arch: 'x64'
       }
     ]
   }
@@ -62,7 +68,7 @@ try {
     fs.mkdirSync('./output')
   } catch (e) {}
 
-  const data = yaml.safeDump(meta, { lineWidth: 1000 })
+  const data = yaml.dump(meta, { lineWidth: 1000 })
   fs.writeFileSync('./output/meta.yaml', data)
   fs.writeFileSync('./output/BETA', 'v' + version)
   console.log(

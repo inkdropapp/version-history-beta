@@ -4,7 +4,7 @@ var dateFormat = require('dateformat')
 var packageJson = require('./package.json')
 
 try {
-  var versions = yaml.safeLoad(fs.readFileSync('./history.yml', 'utf8'))
+  var versions = yaml.load(fs.readFileSync('./history.yml', 'utf8'))
   var md = ''
   md += versions
     .splice(0, 10)
