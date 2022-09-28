@@ -1,4 +1,26 @@
 -
+  version: 5.5.2-beta.1
+  pub_date: 2022-09-28T00:00:00.000Z
+  notes: |
+    ### Improvements
+    - **Dev**: Add a link to [dev-tools](https://my.inkdrop.app/plugins/dev-tools) plugin in Preferences
+    - **Editor**: Remove the file extension from the alt attribute when inserting an image from a file
+      - *Before*: `[filename.jpg](inkdrop://file:****)`
+      - *After*: `[filename](inkdrop://file:****)`
+    - **Theme**: Switch the default light/dark themes automatically based on the system preferences (Thanks [Mac and Ben](https://forum.inkdrop.app/t/make-inkdrop-follow-the-dark-light-mode-setting-on-macos-ios/1923/2))
+      - You can disable this behavior by setting `core.toggleDarkThemeAutomatically` to `false` in `config.cson`
+
+    ### Bugfixes
+    - **Export**: Inline styles not working in exported notes as pdf or html
+    - **Export**: Canceled dialogs not being handled properly
+    - **UI**: The note list not updating if a conflict happens
+    - **Editor**: The editor should refresh after changing custom stylesheets
+    - **Editor**: The app crashes when inputting a title longer than 128 characters (Thanks [Danielsec](https://forum.inkdrop.app/t/note-title-longer-than-128-chars-results-in-crash/3071))
+    - **Markdown Preview**: Task checkboxes get wrong position when the item is empty
+    - **Local server**: The numeric parameters for `_changes` work incorrectly
+    - **Local server**: `GET /tag:<id>` not working
+    - **App**: Notes not being saved when immediately quitting after editing (Thanks [Ryuki](https://forum.inkdrop.app/t/edited-content-disappers-when-i-close-app-immediately-after-editing/3445))
+-
   version: 5.5.0-beta.1
   pub_date: 2021-12-20T00:00:00.000Z
   notes: |
