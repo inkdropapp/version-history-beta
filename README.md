@@ -1,6 +1,6 @@
 # Inkdrop Release Notes (Beta)
 
-## v5.6.0-beta.1
+## v5.6.0-beta.0
 2023-08-29
 
 ## 💨 Faster launch speed
