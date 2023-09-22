@@ -1,3 +1,34 @@
+- version: 5.6.0-beta.1
+  pub_date: 2023-09-22T00:00:00.000Z
+  notes: |
+    ## ✨ Nested workspace views
+    In previous versions, pressing the "Detail" button on the notebook would take you to the workspace view, but you couldn't press the "Detail" button again once you were in that view.
+    In this update, the "Detail" button is now functional within the workspace view as well!
+
+    ![nested workspace view](https://forum.inkdrop.app/uploads/default/original/2X/7/70deb1d54021785330b8ff881f949ac253e9c37a.jpeg)
+
+    The sidebar now displays the path of the current and parent notebooks:
+
+    ![nested workspace view 2](https://forum.inkdrop.app/uploads/default/original/2X/b/b4d01ce272032530449d11aa068cd52c488f928b.jpeg)
+
+    ## Bug fixes
+    - Can't change tag colors (Thanks [Lukas](https://forum.inkdrop.app/t/changing-the-color-of-a-tag-fails/4107))
+    - Defer updating the preview a bit longer when the preview is not visible (Thanks [Seito](https://forum.inkdrop.app/t/keystrokes-are-slow-in-the-beta-version/4122/5))
+    - When exporting, use `Untitled` if the note title is empty
+    - Different modules like `react` get loaded from an incorrect path, which causes the app to crash (Thanks [Jaime](https://forum.inkdrop.app/t/math-plugin-not-working-nor-found/4130))
+    - The cursor jumps to a wrong position when toggling the side-by-side mode
+    - The app crashes when uninstalling a plugin from Preferences (Thanks [Lukas](https://forum.inkdrop.app/t/inkdrop-crashes-when-i-uninstall-a-plugin/4141/))
+    - The note counts are not updated correctly in the workspace views (Thanks [SDO](https://forum.inkdrop.app/t/status-not-updating-for-subnotebook-notes-in-focused-notebook/4151))
+    - `open()` does not open the url in a browser but opens it in an internal browser window instead (Thanks [Shimizu](https://forum.inkdrop.app/t/v5-6-how-to-use-an-external-browser-with-the-open-method/4145))
+    - Sidebar display all notes after toggling off a distraction free (Thanks [Bundit](https://forum.inkdrop.app/t/sidebar-display-all-notes-after-toggling-off-a-distraction-free/4111))
+
+    ## API
+    I've been preparing to support the command palette feature. A new API for it is available on `CommandRegistry`. You can use it like so:
+
+    ```js
+    inkdrop.commands.findCommands({target: document.querySelector('.CodeMirror')})
+    ```
+
 - version: 5.6.0-beta.0
   pub_date: 2023-08-29T00:00:00.000Z
   notes: |
