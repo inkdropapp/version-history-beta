@@ -1,5 +1,15 @@
 # Inkdrop Release Notes (Beta)
 
+## v5.6.0-beta.2
+2023-10-03
+
+## Bug fixes
+- fix(preview): number of task list items not updated correctly (Thanks [Lukas](https://forum.inkdrop.app/t/task-list-is-not-updated-when-saving-notes/4163))
+- fix(html): do not load `browser-commons.js` (Thanks [Lukas](https://forum.inkdrop.app/t/unexpected-error-message-in-the-console/4170/2))
+- fix(share): The app crashes when sharing a note (Thanks [Martin](https://forum.inkdrop.app/t/black-window-on-sharing-in-5-6-0-beta-1/4174))
+- fix(preferences): Add a note on the acrylic background effect on Windows
+- fix(login): The login screen is broken
+
 ## v5.6.0-beta.1
 2023-09-22
 
