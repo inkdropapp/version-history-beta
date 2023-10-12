@@ -1,5 +1,24 @@
 # Inkdrop Release Notes (Beta)
 
+## v5.6.0-beta.4
+2023-10-12
+
+## Bug fixes
+- fix(plugins): Bundled plugins are not working (Thanks [Lukas](https://forum.inkdrop.app/t/autoupdate-does-not-install-the-normally-preinstalled-plugins/4196))
+- chore(assets): Remove Font Awesome as it is no longer used anywhere
+
+## Improvement
+- fix(editor): The notebook picker supports filtering by keyword
+  ![notebook picker improved](https://github.com/inkdropapp/version-history-beta/blob/master/images/v5.6.0-notebook-picker-improved.png?raw=true)
+
+## v5.6.0-beta.3
+2023-10-10
+
+## Bug fixes
+- fix(server): Local HTTP server not working (Thanks [Raivis](https://forum.inkdrop.app/t/impossible-to-connect-live-export/4147/9))
+- fix(editor): floating action buttons not appearing right after the launch (Thanks [Lukas](https://forum.inkdrop.app/t/the-editors-floating-actions-are-not-directly-visible/4187))
+- fix(ipm): The CLI command `ipm install` not working (Thanks [Raivis](https://forum.inkdrop.app/t/impossible-to-connect-live-export/4147/8))
+
 ## v5.6.0-beta.2
 2023-10-03
 
