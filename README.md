@@ -1,5 +1,17 @@
 # Inkdrop Release Notes (Beta)
 
+## v5.6.2-beta.0
+2023-11-16
+
+## Bug fixes
+- fix(note-list): The popup menu for opening notebook not working (Thanks [Shogo-san](https://forum.inkdrop.app/t/v5-6-0-open-notebook/4215))
+- fix(keymap): Canceling multi-stroke keymaps not working (Thanks [Markus](https://forum.inkdrop.app/t/keymap-json-keybindings-mess-up-custom-keymaps/4220))
+- fix(editor): "Move to notebook" not working properly, where it randomly moves a previously opened note (Thanks [Shimizu-san](https://forum.inkdrop.app/t/issue-with-changing-notebooks-in-inkdrop-5-6/4243))
+- fix(editor): Do not transform HTML into Markdown when pasting if it has special markups (Thanks [Jake and Lukas](https://forum.inkdrop.app/t/copy-paste-can-introduce-foriegn-charachters/4249))
+
+## Improvement
+- chore(electron): Bump up to 25.9.5
+
 ## v5.6.0-beta.4
 2023-10-12
 
