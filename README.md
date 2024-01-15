@@ -1,5 +1,34 @@
 # Inkdrop Release Notes (Beta)
 
+## v5.6.3-beta.0
+2024-01-15
+
+## Improvements
+- feat(mde-preview): support creating a note from an empty link ([Related topic](https://forum.inkdrop.app/t/backlink-support/4287/4?u=craftzdog))
+- feat(deep-link): support opening plugin detail from URI
+  - Example: <inkdrop://plugin/mermaid>
+- feat(command): add `core:copy-note-uri`, which copies a URI of the selected note
+- feat(preview): support internal note link expansion: Render rich internal links to enhance connecting notes
+- feat(note-list): **Experimental**: support filtering by tag by just clikcing a tag list item on the note list item
+- feat(search): clearing the search keywords should not open the last opened note (Thanks [SDO](https://forum.inkdrop.app/t/do-not-reset-note-when-clearing-search-filter/4317))
+- feat(sidebar): animate sidebar list items
+- feat(sidebar): animate workspace transition
+- feat(ui): animate main layout
+- fix(editor-title): support moving focus to editor from title input with DOWN key (Thanks [Phil](https://forum.inkdrop.app/t/consistent-keyboard-navigation-between-note-title-and-body/4335))
+- fix(redux-store): navigation: push state when opening a workspace (Thanks [picklecillo](https://forum.inkdrop.app/t/navigating-back-from-detail-view-does-not-update-the-notes-list/4333))
+
+## Bug fixes
+- fix(clipboard): cleaning up html unexpectedly removes `\r`
+- fix(note-status): make conflicted notes when changing note status via keyboard shortcuts (Thanks [Anon](https://forum.inkdrop.app/t/conflicts-when-statuses-change-quickly/4277))
+- fix(proxy): do not use proxy agent with axios. it causes the app to access with a wrong port (Thanks [Shimizu-san](https://forum.inkdrop.app/t/cannot-log-in-under-a-proxy-environment-v5-6-2/4276/2))
+- fix(theme-manager): (Internal) ignore the initial `add` event
+- fix(package-manager): should ignore the resolve file error (Thanks [Brenton](https://forum.inkdrop.app/t/it-doesnt-fall-back-to-the-default-themes-if-a-custom-one-does-not-exist/4297))
+- fix(dropdown): click handler should hide when clicking the dropdown label again when visible (Thanks [Jakub](https://forum.inkdrop.app/t/status-shortcuts-and-drop-menu-issues/2857) and [Simon](https://forum.inkdrop.app/t/status-menu-wont-close-after-clicked-twice/4275))
+- fix(keymap): <kbd>cmd-alt-m</kbd> is used by system global shortcut on macOS
+  - Changed the keymap for `core:move-to-notebook` from <kbd>cmd-alt-m</kbd> to <kbd>cmd-ctrl-m</kbd>
+- fix(redux): the editor should wait for saving the note before closing
+- fix(macOS): app hungs when typing text while CapsLock is enabled on macOS (Thanks [Alessandro and Jack](https://forum.inkdrop.app/t/inkdrop-hangs-on-macos-sonoma-with-caps-lock-active/4347))
+
 ## v5.6.2-beta.0
 2023-11-16
 
