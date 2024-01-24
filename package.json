@@ -12,8 +12,7 @@
     "build:changelog": "node changelog.mjs",
     "release": "env $(cat .env | xargs) node release.mjs",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "npm run build",
-    "docs:deploy": "env $(cat .env | xargs) ./docs-deploy.sh"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "inkdrop"
