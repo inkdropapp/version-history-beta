@@ -1,15 +1,16 @@
 {
+  "type": "module",
   "name": "inkdrop-version-history-beta",
   "version": "5.6.3-beta.0",
   "description": "The beta version history of Inkdrop for desktop",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "build": "npm run build:json && npm run build:readme && npm run build:meta && npm run build:changelog",
-    "build:readme": "node index.js",
+    "build:readme": "node index.mjs",
     "build:json": "js-yaml history.yml > history.json",
-    "build:meta": "node genmeta.js",
-    "build:changelog": "node changelog.js",
-    "release": "env $(cat .env | xargs) node release.js",
+    "build:meta": "node genmeta.mjs",
+    "build:changelog": "node changelog.mjs",
+    "release": "env $(cat .env | xargs) node release.mjs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublishOnly": "npm run build",
     "docs:deploy": "env $(cat .env | xargs) ./docs-deploy.sh"
@@ -22,11 +23,11 @@
   "devDependencies": {
     "eslint": "^8.5.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "js-yaml": "^4.1.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.3.1"
   },
   "dependencies": {
-    "dateformat": "^3.0.3"
+    "dateformat": "^3.0.3",
+    "js-yaml": "^4.1.0",
+    "semver": "^7.5.4"
   }
 }
