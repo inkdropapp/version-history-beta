@@ -5,12 +5,12 @@
   "description": "The beta version history of Inkdrop for desktop",
   "main": "index.mjs",
   "scripts": {
-    "build": "npm run build:json && npm run build:readme && npm run build:meta && npm run build:changelog",
-    "build:readme": "node index.mjs",
-    "build:json": "js-yaml history.yml > history.json",
-    "build:meta": "node genmeta.mjs",
-    "build:changelog": "node changelog.mjs",
-    "release": "env $(cat .env | xargs) node release.mjs",
+    "create-release": "node scripts/create-release.mjs",
+    "build": "npm run build:readme && npm run build:meta && npm run build:changelog",
+    "build:readme": "node scripts/readme.mjs",
+    "build:meta": "node scripts/genmeta.mjs",
+    "build:changelog": "node scripts/changelog.mjs",
+    "release": "env $(cat .env | xargs) node scripts/release.mjs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublishOnly": "npm run build"
   },
