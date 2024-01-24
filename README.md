@@ -591,6 +591,8 @@ A vlog for this update :)
 * **Bugfix**: Vibrant background does not work on macOS Mojave (Thanks [Caleb](https://forum.inkdrop.app/t/vibrant-dark-ui-rendering-issue/187))
 * **Bugfix**: Menu item not rendering properly on Ubuntu 18.04 (Thanks [andy](https://forum.inkdrop.app/t/menu-item-rendering-problem-on-ubuntu-18-04/556))
 
+
 * * *
+
 The release notes for older versions can be found [here](https://github.com/inkdropapp/version-history/blob/master/README-old.md)
 

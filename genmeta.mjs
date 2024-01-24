@@ -1,18 +1,31 @@
-var fs = require('fs')
-var yaml = require('js-yaml')
-var version = require('./package.json').version
+import fs from 'fs'
+import yaml from 'js-yaml'
+import {
+  readVersionFiles,
+  readVersionData,
+  readNotes,
+  getPackageJson
+} from './utils.mjs'
 
 try {
-  const versions = yaml.load(fs.readFileSync('./history.yml', 'utf8'))
+  const versionFiles = readVersionFiles()
+  const packageJson = getPackageJson()
+  const version = packageJson.version
+
+  // Read the most recent 10 Markdown files
+  const notes = versionFiles
+    .slice(0, 10)
+    .map(file => {
+      const versionData = readVersionData(file)
+      const notesContent = readNotes(versionData.version)
+      return `## v${versionData.version}\n${notesContent}`
+    })
+    .join('\n')
+
   const meta = {
     version: version,
     name: 'Inkdrop',
-    notes: versions
-      .slice(0, 10)
-      .map(v => {
-        return '## v' + v.version + '\n' + v.notes
-      })
-      .join('\n'),
+    notes: notes,
     pub_date: new Date(),
     files: [
       {
@@ -70,9 +83,9 @@ try {
 
   const data = yaml.dump(meta, { lineWidth: 1000 })
   fs.writeFileSync('./output/meta.yaml', data)
-  fs.writeFileSync('./output/BETA', 'v' + version)
+  fs.writeFileSync('./output/BETA', 'v' + packageJson.version)
   console.log(
-    `Successfully generated a meta file for version ${version} to ./meta.yaml`
+    `Successfully generated a meta file for version ${packageJson.version} to ./output/meta.yaml`
   )
 } catch (e) {
   console.error(e)

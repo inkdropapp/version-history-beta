@@ -1,22 +1,12 @@
 root: true
-plugins:
-  - prettier
 extends:
-  - plugin:prettier/recommended
+  - prettier
 env:
   es6: true
 rules:
   no-useless-escape: 0
-  prettier/prettier:
-    - 2
-    -
-      trailingComma: none
-      singleQuote: true
-      semi: false
-      arrowParens: avoid
   prefer-const: 2
   no-unused-vars:
     - 2
-    -
-      argsIgnorePattern: ^_
+    - argsIgnorePattern: ^_
       varsIgnorePattern: ^_
