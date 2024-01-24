@@ -2,6 +2,13 @@ import fs from 'fs'
 import path from 'path'
 
 const versionsDir = './versions'
+const packageJsonPath = './package.json'
+
+function updatePackageVersion(version) {
+  const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'))
+  packageJson.version = version
+  fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2))
+}
 
 function createRelease(version) {
   const currentDate = new Date().toISOString()
@@ -24,7 +31,12 @@ function createRelease(version) {
   // Create an empty Markdown file
   fs.writeFileSync(mdFilePath, '')
 
-  console.log(`Release files for version ${version} created.`)
+  // Update version in package.json
+  updatePackageVersion(version)
+
+  console.log(
+    `Release files for version ${version} created and package.json updated.`
+  )
 }
 
 const versionArg = process.argv[2]
