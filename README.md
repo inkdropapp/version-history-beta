@@ -1,5 +1,69 @@
 # Inkdrop Release Notes (Beta)
 
+## v5.8.0-beta.3
+2024-03-29
+
+- fix(editor): unpin when changing the note status to 'Completed' or 'Dropped'
+- feat(tutorial): add video tutorial links
+- fix(markdown): inline style tags not working
+- fix(editor): toggline side-by-side mode does not sync scroll bar positions properly
+- fix(preview): the broken link icon still remains when editing
+- fix(search-bar): keyword won't be reset when changing the note list view
+- fix(note-list-bar): selection gets messed up when holding up/down arrow key to select notes so fast
+- fix(github-preview): incorrect colors of nested alerts
+- fix(auto-link-title): do not insert when inside image link
+- fix(markdown): line breaks not working in gfm-alerts (Thanks Lukas)
+- fix(preview): change the metadata section style to make it clear as a UI rather than note content
+- fix(editor): layout gets corrupted when having custom panes like sidetoc
+- fix(editor-meta): read-only state is not handled in meta-notebook
+- fix(preview): remove margin-top for headings immediately under the metadata section
+- fix(editor): avoid opening the same note via a command
+- fix(preview): do not render the metadata section when print mode
+- fix(preferences): incorrect label 'htmlFor' attribute
+- feat(notebook-list-bar): keyword matching includes parent notebook names
+- fix(editor): allow url to be pasted without an assist feature
+- chore(themes): use vanilla CSS instead of LESS
+
+## v5.8.0-beta.2
+2024-03-15
+
+## Revisiting the editor drawer
+
+In v5.8.0-beta.1, the backlinks have been added to the editor drawer.
+But as [picklecillo pointed out](https://forum.inkdrop.app/t/making-the-editor-drawer-permanently-available/4486), you may want to make it persistent so that you can jump around the linked notes quickly.
+
+First, I considered adding another dropdown for backlinks next to the notebook name under the note title.
+But I thought it wouldn't be useful if you want to check backlinks across multiple notes sequentially.
+I found myself rarely opening the editor drawer to check the note information.
+It should be solely used for additional actions like ‘Revision history’, ‘Share on web’, ‘Pin to top’, etc, that’s simple and easy to understand.
+Instead of adding various things to the editor drawer and making it complicated, it’d be nice to display the note metadata and backlinks in the preview.
+
+So, I decided to render the note information in the preview as a part of the note, as you can see below:
+
+![Metadata rendered in the preview](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:YInbeS2wd/index-public)
+
+This way, you can quickly check the metadata without toggling the editor drawer while it doesn’t distract your writing experience.
+
+The backlink section can be folded. The app remembers the fold/unfold state across notes.
+
+![fold/unfold the backlink section](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:Ou6mihANI/index-public)
+
+The scroll sync still works just fine:
+
+![scroll sync](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:WWPL0i2SU/index-public)
+
+## New option: Readable line lengths
+
+This option limits the maximum width of the editor and preview panes to prevent excessively long lines of text. Enabled by default.
+
+![New option](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:VUNwrLDtR/index-public)
+
+## Bugfixes
+
+- fix(macOS): Full Screen Button Disable Problem ([Thanks Tahsin](https://forum.inkdrop.app/t/full-screen-button-disable-problem/4474))
+- fix(note-list): Inconsistent tag filtering ([Thanks Lukas](https://forum.inkdrop.app/t/inconsistent-tag-filtering/4480))
+- fix(editor): Auto link title: does not properly check whether only exactly one link is inserted ([Thanks Lukas](https://forum.inkdrop.app/t/auto-link-title-does-not-properly-check-whether-only-exactly-one-link-is-inserted/4479))
+
 ## v5.8.0-beta.1
 2024-03-08
 
