@@ -1,10 +1,112 @@
 # Inkdrop Release Notes (Beta)
 
+## v5.8.1-beta.1
+2024-04-19
+
+## Bug fixes
+
+- Wrong icon in 'Apps and Features' list on Windows (Thanks [Dmitry](https://forum.inkdrop.app/t/default-electron-icon-in-apps-and-features-list/4548))
+- Scroll positions get reset when changing the layout (Thanks [Ivan](https://forum.inkdrop.app/t/keep-the-edit-location-when-toggle-side-bar/4545))
+- Random crashes when quitting Inkdrop on Windows (Thanks [Patrick](https://forum.inkdrop.app/t/error-on-closing-inkdrop-on-win-11/4561))
+- The 'Create' button does nothing on the Paste URL as Link dialog (Thanks [Patrick](https://forum.inkdrop.app/t/paste-of-url-does-nothing-on-hitting-create/4559))
+- Duplicate menu items in the Trash notebook (Thanks [Dmitry](https://forum.inkdrop.app/t/duplicate-items-in-the-context-menu/3599/5?u=craftzdog))
+
+### Embed the default preview theme in the app
+
+In v5.8.1, the app would solve the following issue by embedding the default preview theme:
+
+- GFM Alerts not working on community preview themes (Thanks [Kentaro and taichi](https://forum.inkdrop.app/t/there-might-be-a-bug-in-rendering-alerts/4529)
+
+The problem is that themes have to provide every style, which requires to update when the app gets a new feature with a stylesheet.
+Since we can't expect every theme developer to sustainably and quickly update their themes, it'd be nice to have the default styles instead of requiring the themes to include every style.
+So, from this version, themes basically 'override' the default theme.
+
+https://github.com/inkdropapp/inkdrop-github-preview-theme
+
+The default preview theme `github-preview` now doesn't apply any styles.
+If you create a new preview theme, you only have to add styles for customizations.
+
+This way, the existing preview themes can continue working without updating, like GFM Alerts.
+
+In the future, I'll make the same change to the UI themes.
+
+## Improvements
+
+### Update the GitHub preview theme to match the latest GitHub styles
+
+The default preview theme was outdated, so it has been updated based on [this reopsitory](https://github.com/sindresorhus/github-markdown-css).
+This also fixes the task list identation issue (Thanks [Dmitry](https://forum.inkdrop.app/t/no-text-indentation-in-checklist-preview/4536)).
+
+### Apply the syntax theme to codeblocks in the Markdown preview (Needs update)
+
+While working on simplifying theming the Markdown preview styles mentioned above, I thought it'd be nice to support applying the current syntax theme to the codeblocks in the preview pane automatically.
+It allows you to avoid making another preview theme just for changing the codeblock syntax highlighting styles.
+
+For example: Solarized Dark
+
+![Solarized Dark](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:-9cyFnTmz/index-public)
+
+Solarized Light:
+
+![Solarized Light](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:1Weo0dhfD/index-public)
+
+#### How to make your syntax theme support it
+
+The Markdown renderer now adds a class name `.codeblock` to the enclosing `div` elements of the codeblocks.
+So, it is easy to add styles to them just by adding a CSS selector `.mde-preview .codeblock pre` to your stylesheet like so:
+
+```diff
+diff --git a/styles/index.css b/styles/index.css
+index 14ae539..3f6bcbb 100644
+--- a/styles/index.css
++++ b/styles/index.css
+@@ -26,7 +26,8 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
+   --base-magenta: #d33682;
+
+   /* Color scheme for code-mirror */
+-  .CodeMirror {
++  .CodeMirror,
++  .mde-preview .codeblock pre {
+     color-scheme: dark;
+
+     color: var(--base05);
+     .cm-header {
+       color: var(--base-yellow);
+     }
+```
+
+Check out [Solarized Dark Syntax](https://github.com/inkdropapp/inkdrop-solarized-dark-syntax-theme) for more detail.
+
+### Better Preferences UI
+
+The setting items have been organized and it has got much easier to find and change settings.
+
+![Better setting UIs](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:2HqnvlOPy/index-public)
+
+And the Plugins page has got a filter input:
+
+![Filter installed plugins with keyword](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:ksYfsq6pr/index-public)
+
+### New editor option: "Paste URL as link"
+
+Some people don't like the feature (Thanks [Ryota](https://forum.inkdrop.app/t/how-disable-auto-link-title/4558)).
+
+- **Preferences** -> **Editing** -> **Markdown** -> **Paste URL as link**
+
+![Preferences](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:7bFuyciCn/index-public)
+
 ## v5.8.0-beta.3
 2024-03-29
 
+## Improvements
+
 - fix(editor): unpin when changing the note status to 'Completed' or 'Dropped'
 - feat(tutorial): add video tutorial links
+- fix(preview): change the metadata section style to make it clear as a UI rather than note content
+- feat(notebook-list-bar): keyword matching includes parent notebook names
+
+## Bugfixes
+
 - fix(markdown): inline style tags not working
 - fix(editor): toggline side-by-side mode does not sync scroll bar positions properly
 - fix(preview): the broken link icon still remains when editing
@@ -13,14 +115,12 @@
 - fix(github-preview): incorrect colors of nested alerts
 - fix(auto-link-title): do not insert when inside image link
 - fix(markdown): line breaks not working in gfm-alerts (Thanks Lukas)
-- fix(preview): change the metadata section style to make it clear as a UI rather than note content
 - fix(editor): layout gets corrupted when having custom panes like sidetoc
 - fix(editor-meta): read-only state is not handled in meta-notebook
 - fix(preview): remove margin-top for headings immediately under the metadata section
 - fix(editor): avoid opening the same note via a command
 - fix(preview): do not render the metadata section when print mode
-- fix(preferences): incorrect label 'htmlFor' attribute
-- feat(notebook-list-bar): keyword matching includes parent notebook names
+- fix(preferences): incorrect label 'htmlFor' attribute (Thanks [Tahsin](https://forum.inkdrop.app/t/invisible-characters-and-line-length-label-problem/4489))
 - fix(editor): allow url to be pasted without an assist feature
 - chore(themes): use vanilla CSS instead of LESS
 
