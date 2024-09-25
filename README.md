@@ -1,5 +1,51 @@
 # Inkdrop Release Notes (Beta)
 
+## v5.9.0-beta.0
+2024-09-25
+
+## 🔎 The full-text search engine is now language-agnostic
+
+> [!NOTE]
+> This is the same update on [mobile v5.4.0](https://forum.inkdrop.app/t/inkdrop-mobile-v5-4-0-ground-up-improvements/4975)
+
+This update would solve this issue: [Odd searching issue when searching for text](https://forum.inkdrop.app/t/odd-searching-issue-when-searching-for-text/4477)
+
+The app had been using the language-dependent tokenization processes called [Porter stemming algorithm](https://tartarus.org/martin/PorterStemmer/) and a Japanese-specific segmentation algorithm.
+In some cases, they cause some odd searching issue, where [you can't find notes with particular keywords](https://forum.inkdrop.app/t/odd-searching-issue-when-searching-for-text/4477).
+
+I recently found that SQLite3 officially supports [the trigram tokenizer](https://forum.inkdrop.app/t/odd-searching-issue-when-searching-for-text/4477/3?u=craftzdog).
+I managed to migrate to it. Now, you can use any languages including Chinese, Japanese, Arabic, etc., in your notes!
+Also, it fully supports partial matching, so it is optimal for searching code snippets.
+For example, it can properly find a note with a code fragment like `"er } = require("`.
+
+![trigram-demo](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:1gCh5Ch8/index-public)
+
+## 🕵️‍♀️ Highlight matched keywords in the note list
+
+![highlight-matched-keywords](inkdrop://file:rOo4VOJN)
+
+As you can see in the above screenshot, it now can highlight matched keyworeds in the note list, which would help you more quickly find your desired note.
+
+## Improvements
+
+- feat(context-menu): add 'Paste as Plain Text' to the editor context menu
+  ![Paste as Plain Text context menu #x-small](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:nF_3MZmI/index-public)
+
+## Bug fixes
+
+- fix(dialog): `updatedAt` should not be updated when the note gets moved
+- fix(theme): Cannot enable Vibrant dark theme on the light mode on the system (Thanks [SDO and Marco](https://forum.inkdrop.app/t/can-not-enable-vibrant-dark-theme/4595))
+- fix(redux): prevent performing some actions on the non-existing notebooks (Thanks [Akiya-san](https://forum.inkdrop.app/t/when-i-open-it-in-the-windows-version-its-all-dark/4612)
+  - Prevent opening another note when failing to save the current note
+  - Prevent creating a new note in the notebook that does not exist
+  - Display an error dialog when failing to create a new note
+- fix(layouts): editor view icons overlap with Search / Replace buttons (Thanks [Marco](https://forum.inkdrop.app/t/editor-view-icons-overlap-with-search-replace-buttons/4638))
+- fix(layout): missing window buttons on the error blank slate (Thanks [gaeulbyul](https://forum.inkdrop.app/t/window-buttons-may-disappear-in-some-situations/4716))
+- fix(preview): odd spacing in the metadata pane (Thanks [Lukas and Dmitry](https://forum.inkdrop.app/t/spacing-between-backlinks-is-not-uniform/4710))
+- fix(preferences-plugins): queries should be debounced
+- fix(theme): Missing olive tag color (Thanks [Lukas](https://forum.inkdrop.app/t/theme-default-dark-ui-missing-color-olive/4491))
+- fix(preferences-plugins): Blank screen from search on filter of Installed plugins (Thanks [Bundit](https://forum.inkdrop.app/t/blank-screen-from-search-on-filter-of-installed-plugins/4605))
+
 ## v5.8.1-beta.2
 2024-04-23
 
