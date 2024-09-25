@@ -22,14 +22,14 @@ For example, it can properly find a note with a code fragment like `"er } = requ
 
 ## 🕵️‍♀️ Highlight matched keywords in the note list
 
-![highlight-matched-keywords](inkdrop://file:rOo4VOJN)
+![highlight-matched-keywords](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:nF_3MZmI/index-public)
 
-As you can see in the above screenshot, it now can highlight matched keyworeds in the note list, which would help you more quickly find your desired note.
+As you can see in the above screenshot, it now can highlight matched keywords in the note list, which would help you more quickly find your desired note.
 
 ## Improvements
 
 - feat(context-menu): add 'Paste as Plain Text' to the editor context menu
-  ![Paste as Plain Text context menu #x-small](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:nF_3MZmI/index-public)
+  ![Paste as Plain Text context menu #x-small](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:rOo4VOJN/index-public)
 
 ## Bug fixes
 
