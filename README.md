@@ -1,5 +1,38 @@
 # Inkdrop Release Notes (Beta)
 
+## v5.9.0-beta.2
+2024-11-19
+
+## Improvements
+
+- feat(export): allow raw HTML in "Copy as Simple HTML"
+- fix(mde): use `--primary-color` for `fat-cursor-color`
+
+## Bugfixes
+
+- fix(note-tags-bar-input): randomly causes duplicate notes when moving focus
+- fix(theme): custom drag layer content notes has wrong colors
+- fix(theme): better visibility for vertical and dropdown menus, and metadata section on preview
+- fix(theme): add variables for `kbd`
+- fix(preview): avoid applying the default codemirror syntax theme to the preview inline codeblocks
+- fix(macos): revert `titleBarStyle` to `hidden`
+- chore(dep): bump up codemirror
+- feat(theme): add css variables for notification view
+- fix(app): deactivate plugins when destroying the instance
+- fix(theme): explicitly specify `color-scheme`
+- fix(theme): add variables for notification views on sidebar
+
+## Theme deprecations
+
+Themes no longer maintained by the author are flagged as deprecated in the app.
+
+- `banana-dark-ui`
+- `monokai-dark-ui`
+- `material-palenight-ui`
+- `octopus-dark-ui`
+- `material-ocean-ui`
+- `horizon-dark-ui`
+
 ## v5.9.0-beta.1
 2024-10-29
 
