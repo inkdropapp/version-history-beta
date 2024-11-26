@@ -1,5 +1,21 @@
 # Inkdrop Release Notes (Beta)
 
+## v5.9.0-beta.3
+2024-11-26
+
+## New feature
+
+- Support toggling inline code with <kbd>`</kbd> when selecting text (Thanks [Sachin_A](https://forum.inkdrop.app/t/add-a-command-for-toggling-inline-code/2586))
+  - Add command `core:toggle-inline-code`
+
+## Improvements
+
+- Allow signing in as a guest user to access the app without an account for a demo
+
+## Bug fixes
+
+- fix(markdown): checkbox cannot be toggled randomly
+
 ## v5.9.0-beta.2
 2024-11-19
 
