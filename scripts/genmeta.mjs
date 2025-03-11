@@ -79,7 +79,9 @@ try {
 
   try {
     fs.mkdirSync('./output')
-  } catch (e) {}
+  } catch (e) {
+    // ignore
+  }
 
   const data = yaml.dump(meta, { lineWidth: 1000 })
   fs.writeFileSync('./output/meta.yaml', data)
