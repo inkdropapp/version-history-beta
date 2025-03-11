@@ -1,5 +1,19 @@
 # Inkdrop Release Notes (Beta)
 
+## v5.11.0-beta.0
+2025-03-11
+
+## Two-factor authentication support
+
+I'd like to ask for your help to test it before fully rolling out.
+Although I carefully tested it myself, please let me know if you get any problems. I will disable your 2FA setup ASAP.
+
+Please check out the release notes on the user forum here:
+
+- <https://forum.inkdrop.app/t/2fa-is-now-available-in-beta/5159>
+
+Thank you for your support!
+
 ## v5.9.0-beta.3
 2024-11-26
 
