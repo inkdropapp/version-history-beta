@@ -1,5 +1,34 @@
 # Inkdrop Release Notes (Beta)
 
+## v5.11.0-beta.1
+2025-03-17
+
+## Big launch speed improvement for Windows
+
+It addresses the following reported issue:
+
+- [17 seconds cold start on Windows 10](https://forum.inkdrop.app/t/17-seconds-cold-start-on-windows-10/5143)
+
+This was due to Windows Defender scanning the app's resource files on startup.
+I've managed to bundle all the files into a single ASAR file including the native modules to reduce the scanning time.
+It now starts up in ~3 seconds on my machine.
+
+Thanks for helping me identify the cause of the issue, @Micha_Huhn, @Magnus, and @Lukas!
+
+## Reduced app size by ~120MB
+
+There is a good side-effect of optimizing the app's build process -- the app size has been significantly reduced!
+
+- macOS app size:
+  - v5.11.0-beta.0: **542.1MB**
+  - v5.11.0-beta.1: **419.9MB**
+
+![app size comparison](https://forum.inkdrop.app/uploads/default/original/2X/7/777e7b0101c8e52e5a1bac72fa5a6fe2223f0515.jpeg)
+
+## Other bugfix
+
+- Fix sidebar animation issues (Thanks [shimizu-san](https://forum.inkdrop.app/t/using-the-simple-note-list-plugin-restricts-the-sidebars-scrollable-area-inkdrop-5-10-0/5144))
+
 ## v5.11.0-beta.0
 2025-03-11
 
