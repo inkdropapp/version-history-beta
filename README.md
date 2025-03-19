@@ -1,5 +1,14 @@
 # Inkdrop Release Notes (Beta)
 
+## v5.11.0-beta.2
+2025-03-19
+
+This is a release-candidate for the next stable release.
+
+## Bugfix
+
+- Built-in plugins aren't loaded properly (Thanks [Lukas](https://forum.inkdrop.app/t/inkdrop-preinstalled-plugins-are-missing-after-update/5168))
+
 ## v5.11.0-beta.1
 2025-03-17
 
